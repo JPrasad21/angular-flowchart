@@ -1,0 +1,16 @@
+<div class="example-boundary">
+  <div class="example-box" id="start" cdkDragBoundary=".example-boundary" cdkDrag
+  (cdkDragMoved)="onDrag($event)">
+    I can only be dragged within the dotted container
+  </div>
+  <div id="end" class="example-box" cdkDragBoundary=".example-boundary" cdkDrag
+  (cdkDragMoved)="onDrag($event)">
+    I can only be dragged within the dotted container
+  </div>
+  <div id="end1" class="example-box" cdkDragBoundary=".example-boundary" cdkDrag
+  (cdkDragMoved)="onDrag($event)">
+    I can only be dragged within the dotted container
+  </div>
+</div>
+<button type="button" (click)="start()">Start</button>
+<button type="button" (click)="reDraw()">Change</button>
